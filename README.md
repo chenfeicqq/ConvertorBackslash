@@ -1,4 +1,18 @@
 ConvertorBackslash
 ==================
 
-Eclipse插件：Windows下开发，经常复制文件（夹）路径然后手工将路径中 \ 修改为 / ，本插件用于将选中文本中的 \ 转为 /
+### Eclipse插件 ###
+
+#### 使用场景 ####
+
+Windows下Java开发，经常复制文件（夹）路径.
+
+由于Windows下路径分隔符是“\”，而在Java语法中“\”是转义符，所以经常需要手动或者使用替换功能将路径中“\”替换为“/”。
+
+本插件用于将选中文本中的“\”转为“/”。
+
+#### 使用方式 ####
+Eclipse下选中文本，按下Shift+Alt+C快捷键，会自动将选中文本中的“\”替换为“/”。
+
+#### 备注 ####
+插件默认快捷键为Shift+Alt+C，可在Eclipse-Window-Preferences-General-Keys中搜索“Convertor Backslash”找到对应的快捷键绑定，更改快捷键。
