@@ -1,0 +1,12 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: ConvertorBackslash Plug-in
+Bundle-SymbolicName: com.chenfei.eclipse.plugin.convertor.backslash.ConvertorBackslashAction; singleton:=true
+Bundle-Version: 1.0.1
+Eclipse-LazyStart: true
+Bundle-RequiredExecutionEnvironment: JavaSE-1.6
+Bundle-ActivationPolicy: lazy
+Require-Bundle: org.eclipse.ui,
+ org.eclipse.ui.editors,
+ org.eclipse.core.runtime,
+ org.eclipse.jface.text

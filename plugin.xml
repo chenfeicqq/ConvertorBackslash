@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.2"?>
+<plugin>
+	<!--
+	<extension point="org.eclipse.ui.popupMenus">
+		<objectContribution id="ConvertorBackslash.menu" objectClass="org.eclipse.core.runtime.IAdaptable">
+			<action class="com.chenfei.eclipse.plugin.convertor.backslash.ConvertorBackslashAction" id="ConvertorBackslash.action"
+				icon="icons/ConvertorBackslash.png" menubarPath="additions" enablesFor="1" label="Convertor Backslash">
+			</action>
+		</objectContribution>
+	</extension>
+	-->
+	<extension point="org.eclipse.ui.actionSets">
+		<actionSet id="ConvertorBackslash" label="Convertor Backslash" visible="true">
+			<action class="com.chenfei.eclipse.plugin.convertor.backslash.ConvertorBackslashAction" definitionId="ConvertorBackslash.command"
+				icon="icons/ConvertorBackslash.png" id="ConvertorBackslash.bingding.command" label="Convertor Backslash" />
+		</actionSet>
+	</extension>
+	<extension point="org.eclipse.ui.commands">
+		<category description="Convertor Backslash" id="ConvertorBackslash.category" name="Convertor Backslash"></category>
+		<command categoryId="ConvertorBackslash.category" id="ConvertorBackslash.command" name="Convertor Backslash"></command>
+	</extension>
+	<extension point="org.eclipse.ui.bindings">
+		<key sequence="Alt+Shift+C" contextId="org.eclipse.ui.textEditorScope" commandId="ConvertorBackslash.command"
+			schemeId="org.eclipse.ui.defaultAcceleratorConfiguration" />
+	</extension>
+</plugin>
